@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(-45deg, #a6a6a6, #5ac05a, #262626, #a6a6a6);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      background-color: white;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+</head>
+<script type="module">
+  async function main() {
+    const pkgJs = await (await fetch(`./pkg/uc2024.js`)).text();
+
+    // Create the 'pure' version of the wasm_bindgen's `init()`
+    const initJs = `return () => { const document = undefined; const location = {}; ${pkgJs} return wasm_bindgen; };`;
+    const init = (new Function(initJs)).call(null);
+
+    const wbg = init();
+    const wasm = await wbg(`./pkg/uc2024_bg.wasm`);
+    // console.log('wasm:', wasm);
+    wbg.app();
+
+  }
+
+  main();
+</script>
+
+</html>

@@ -1,0 +1,116 @@
+@import './base.css';
+
+:root {
+  --color-background: #E9D2F0;
+  --color-text: black;
+  text-align: center;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-ul {
+  display: inline-block;
+}
+
+li {
+  margin: 5px;
+}
+
+.sub-heading {
+  font-weight: bold;
+}
+
+#app {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a,
+.green {
+  text-decoration: none;
+  /* color: hsla(160, 100%, 37%, 1); */
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+.project-info {
+  display: inline-block;
+  max-width: 35em;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.code-text {
+  padding-left: 20px;
+  padding-block-start: 20px;
+  padding-block-end: 20px;
+}
+
+.code-block {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  background: #1e1e1e;
+  color: #5394c4;
+}
+
+.dog-mode {
+  background-image: url('/photos/dogModeBackground.png');
+  background-size: 100px;
+  color: red;
+  background-color: darkmagenta;
+}
+
+.dog-mode a {
+  color: lightblue;
+}
+
+.dog-mode a:hover {
+  background-color: black;
+}
+
+.quiz-time-mode {
+  background-color: rgb(64, 192, 196);
+  color: darkmagenta;
+}
+
+.quiz-time-mode a {
+  color: lightgray;
+}
+
+.quiz-time-mode a:hover {
+  background-color: black;
+}
+
+.dyslexia-mode {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  background-color: blanchedalmond;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+video {
+  max-width: 90%;
+}
+
+img {
+  max-width: 90%;
+}
+
+.play-button {
+  font-size: 2em;
+  background-color: #FFBDBD;  
+  border-radius: 35%;
+  padding: 20px;
+  margin: 10px;
+}

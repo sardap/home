@@ -1,0 +1,20 @@
+{ 
+   "editor.formatOnSave": false,  
+	"vetur.validation.template": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"spellright.language": [
+		"en"
+	],
+	"spellright.documentTypes": [
+		"markdown",
+		"latex",
+		"plaintext",
+		"vue"
+	],
+	"cSpell.words": [
+		"kiryu"
+	]
+}
+   

@@ -1,0 +1,7 @@
+version: '3.0'
+services:
+  server:
+    container_name: resume_server
+    build: '.'
+    ports:
+      - 8080:8080

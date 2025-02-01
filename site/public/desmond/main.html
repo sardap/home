@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <desmond-player id="player"></desmond-player>
+    <script src="desmond.min.js"></script>
+    <script>
+	var url = location.href.split('?')[1].split('=')[1];
+    document.getElementById("player").loadURL(url);
+    </script>
+  </body>
+</html>

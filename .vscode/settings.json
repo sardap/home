@@ -1,0 +1,36 @@
+{
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"cSpell.words": [
+		"brainfuck",
+		"colour",
+		"colours",
+		"dislxisic",
+		"dota",
+		"Dreamcast",
+		"dyslexiafiy",
+		"dyslexiafiyed",
+		"Gough",
+		"Hackathon",
+		"kiryu",
+		"kiryueverywhere",
+		"Metacritic",
+		"Mongogame",
+		"opsgenie",
+		"Organisation",
+		"Persistedstate",
+		"pina",
+		"pinia",
+		"reporele",
+		"Sarda",
+		"Swin",
+		"techongoles",
+		"Temptris",
+		"tigtbifhimva",
+		"Utilising",
+		"Voties",
+		"Whitlam"
+	],
+}
