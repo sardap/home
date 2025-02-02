@@ -177,6 +177,13 @@ function copyLinkToClipboard() {
         </li>
       </ul>
     </div>
+    <div>
+      <h3>Available in store!</h3>
+      <ul>
+        <li><a href="https://crates.io/crates/modern-roman-clock">Crate</a></li>
+        <li><a href="https://www.npmjs.com/package/modern-roman-clock">NPM</a></li>
+      </ul>
+    </div>
   </div>
 </template>
 

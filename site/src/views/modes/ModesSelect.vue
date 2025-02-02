@@ -4,14 +4,21 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
-const modes = [
-  Mode.Dog,
-  Mode.QuizTime,
-  Mode.Dyslexia,
-  Mode.PhraseLearner,
-  Mode.Ship,
-  Mode.RomanClock
-]
+const modes = getModes()
+
+function getModes() {
+  const modes = [Mode.Dog, Mode.QuizTime, Mode.Dyslexia, Mode.Ship, Mode.RomanClock]
+
+  // Shuffle the modes
+  for (let i = modes.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    const temp = modes[i]
+    modes[i] = modes[j]
+    modes[j] = temp
+  }
+
+  return modes
+}
 
 function startMode(mode: Mode) {
   router.push(`/modes/${mode}`)

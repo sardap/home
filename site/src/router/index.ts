@@ -26,6 +26,10 @@ const router = createRouter({
       path: '/modes/:mode',
       component: () => import('../views/modes/ModesView.vue'),
     },
+    {
+      path: '/sites',
+      component: () => import('../views/sites/SitesSelect.vue'),
+    },
   ],
 })
 

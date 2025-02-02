@@ -22,10 +22,10 @@ export const WalkGoodMaybe: GameInfo = {
     {
       platform: Platform.GameBoyAdvance,
       downloadLink:
-        'https://github.com/sardap/walk-good-maybe/releases/download/v1.1.3/walk-good-maybe.gba'
-    }
+        'https://github.com/sardap/walk-good-maybe/releases/download/v1.1.3/walk-good-maybe.gba',
+    },
   ],
-  tags: [Tag.Complete]
+  tags: [Tag.Complete],
 }
 
 export const UltimateChess2024: GameInfo = {
@@ -37,15 +37,15 @@ export const UltimateChess2024: GameInfo = {
     {
       platform: Platform.Linux,
       downloadLink:
-        'https://github.com/sardap/ultimate-chess-2024/releases/download/v1.0.0/linux.zip'
+        'https://github.com/sardap/ultimate-chess-2024/releases/download/v1.0.0/linux.zip',
     },
     {
       platform: Platform.Windows,
       downloadLink:
-        'https://github.com/sardap/ultimate-chess-2024/releases/download/v1.0.0/windows.zip'
-    }
+        'https://github.com/sardap/ultimate-chess-2024/releases/download/v1.0.0/windows.zip',
+    },
   ],
-  tags: [Tag.Complete]
+  tags: [Tag.Complete],
 }
 
 export const NoTouchyFace: GameInfo = {
@@ -54,22 +54,22 @@ export const NoTouchyFace: GameInfo = {
   link: 'no-touchy-my-facey',
   platforms: [
     {
-      platform: Platform.Web
+      platform: Platform.Web,
     },
     {
       platform: Platform.Linux,
-      downloadLink: 'https://github.com/sardap/HackathonThing/releases/download/1.0.0/linux.zip'
+      downloadLink: 'https://github.com/sardap/HackathonThing/releases/download/1.0.0/linux.zip',
     },
     {
       platform: Platform.Windows,
-      downloadLink: 'https://github.com/sardap/HackathonThing/releases/download/1.0.0/windows.zip'
+      downloadLink: 'https://github.com/sardap/HackathonThing/releases/download/1.0.0/windows.zip',
     },
     {
       platform: Platform.MacOs,
-      downloadLink: 'https://github.com/sardap/HackathonThing/releases/download/1.0.0/apple.zip'
-    }
+      downloadLink: 'https://github.com/sardap/HackathonThing/releases/download/1.0.0/apple.zip',
+    },
   ],
-  tags: [Tag.Complete]
+  tags: [Tag.Complete],
 }
 
 export const StopTheMail: GameInfo = {
@@ -78,15 +78,15 @@ export const StopTheMail: GameInfo = {
   link: 'stop-the-mail',
   platforms: [
     {
-      platform: Platform.Web
+      platform: Platform.Web,
     },
     {
       platform: Platform.DS,
       downloadLink:
-        'https://github.com/sardap/stop-the-mail/releases/download/v0.2.0/stop-the-mail.nds'
-    }
+        'https://github.com/sardap/stop-the-mail/releases/download/v0.2.0/stop-the-mail.nds',
+    },
   ],
-  tags: [Tag.CompleteShit]
+  tags: [Tag.Abaddon],
 }
 
 export const WeddingPlanner: GameInfo = {
@@ -98,15 +98,15 @@ export const WeddingPlanner: GameInfo = {
     {
       platform: Platform.Linux,
       downloadLink:
-        'https://github.com/sardap/wedding-planner/releases/download/1.0.0/wedding_planner_linux'
+        'https://github.com/sardap/wedding-planner/releases/download/1.0.0/wedding_planner_linux',
     },
     {
       platform: Platform.Windows,
       downloadLink:
-        'https://github.com/sardap/wedding-planner/releases/download/1.0.0/wedding_planner_windows.exe'
-    }
+        'https://github.com/sardap/wedding-planner/releases/download/1.0.0/wedding_planner_windows.exe',
+    },
   ],
-  tags: [Tag.Complete, Tag.MobileFriendly]
+  tags: [Tag.Complete, Tag.MobileFriendly],
 }
 
 export const Voties: GameInfo = {
@@ -114,5 +114,40 @@ export const Voties: GameInfo = {
   repo: 'https://github.com/sardap/voties',
   link: 'voties',
   platforms: [{ platform: Platform.Web }],
-  tags: []
+  tags: [Tag.Abaddon],
+}
+
+export const WalkGoodMaybeHD: GameInfo = {
+  title: 'Walk Good Maybe HD',
+  repo: 'https://github.com/sardap/go-walk-good-maybe-hd',
+  link: 'walk-good-maybe-hd',
+  platforms: [
+    { platform: Platform.Web },
+    {
+      platform: Platform.Linux,
+      downloadLink:
+        'https://github.com/sardap/go-walk-good-maybe-hd/releases/download/v0.8.0/walk-good-maybe-hd-linux-amd64.zip',
+    },
+    {
+      platform: Platform.Windows,
+      downloadLink:
+        'https://github.com/sardap/go-walk-good-maybe-hd/releases/download/v0.8.0/walk-good-maybe-hd-windows-amd64.zip',
+    },
+  ],
+  tags: [Tag.Abaddon],
+}
+
+export const MarchGoodMaybe: GameInfo = {
+  title: 'March Good Maybe',
+  repo: 'https://github.com/sardap/march_good_maybe',
+  link: 'march-good-maybe',
+  platforms: [
+    { platform: Platform.Web },
+    {
+      platform: Platform.GameBoyAdvance,
+      downloadLink:
+        'https://github.com/sardap/march_good_maybe/releases/download/v0.3.0/march_good_maybe.gba',
+    },
+  ],
+  tags: [Tag.Abaddon],
 }

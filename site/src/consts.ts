@@ -11,7 +11,7 @@ export enum Platform {
   Windows = 'Windows',
   MacOs = 'Apple Desktop',
   GameBoyAdvance = 'Game Boy Advance',
-  DS = 'DS'
+  DS = 'DS',
 }
 
 export function platformToImage(platform: Platform) {
@@ -32,7 +32,7 @@ export function platformToImage(platform: Platform) {
 }
 
 export enum Tag {
-  CompleteShit = 'Absolute shit',
+  Abaddon = 'Abaddon',
   Complete = 'Complete',
   MobileFriendly = 'Mobile friendly',
   WASM = 'WASM',
@@ -64,5 +64,5 @@ export enum Tag {
   SwinGame = 'SwinGame',
   CurseWords = 'Curse words',
   Bevy = 'Bevy',
-  Three3DS = '3DS'
+  Three3DS = '3DS',
 }

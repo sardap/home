@@ -9,7 +9,7 @@ defineProps<{
 
 <template>
   <div>
-    <span>Platforms: </span>
+    <span class="platform-title">Platforms: </span>
     <span v-for="(platform, i) in game.platforms" :key="platform.platform">
       <img
         :src="platformToImage(platform.platform)"
@@ -19,4 +19,8 @@ defineProps<{
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.platform-title {
+  font-weight: 400;
+}
+</style>

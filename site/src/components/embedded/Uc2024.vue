@@ -4,4 +4,8 @@
   <iframe src="/uc2024/main.html" width="500" height="650" allow="autoplay"></iframe>
 </template>
 
-<style scoped></style>
+<style scoped>
+iframe {
+  max-width: 100%;
+}
+</style>

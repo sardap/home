@@ -35,10 +35,12 @@ const tagsJoined = props.game.tags.join(', ')
 </template>
 
 <style scoped>
-.grid-container {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-gap: 20px;
+@media (min-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 20px;
+  }
 }
 
 video {
@@ -52,9 +54,14 @@ video {
 
 .short-desc {
   font-size: 1.2em;
+  font-weight: 400;
 }
 
 .long-desc {
-  font-size: 0.8em;
+  font-size: 1em;
+}
+
+.tags-heading {
+  font-weight: 400;
 }
 </style>

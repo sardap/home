@@ -5,6 +5,8 @@ import NoTouchyMyFacePlay from '@/components/games/NoTouchyMyFacePlay.vue'
 import StopTheMailPlay from '@/components/games/StopTheMailPlay.vue'
 import WeddingPlannerPlay from '@/components/games/WeddingPlannerPlay.vue'
 import VotiesPlay from '@/components/games/VotiesPlay.vue'
+import WalkGoodMaybeHDPlay from '@/components/games/WalkGoodMaybeHDPlay.vue'
+import MarchGoodMaybePlay from '@/components/games/MarchGoodMaybePlay.vue'
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 
@@ -22,6 +24,8 @@ const game = ref(route.params.game as string) // Get the mode from the URL
     <StopTheMailPlay v-else-if="game == 'stop-the-mail'" />
     <WeddingPlannerPlay v-else-if="game == 'wedding-planner'" />
     <VotiesPlay v-else-if="game == 'voties'" />
+    <WalkGoodMaybeHDPlay v-else-if="game == 'walk-good-maybe-hd'" />
+    <MarchGoodMaybePlay v-else-if="game == 'march-good-maybe'" />
     <div v-else>
       <p>ERROR</p>
     </div>

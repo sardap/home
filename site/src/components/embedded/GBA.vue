@@ -5,16 +5,16 @@ import VersionSelector from './VersionSelector.vue'
 defineProps({
   versionUrl: {
     type: String,
-    required: true
+    required: true,
   },
   resourceUrl: {
     type: String,
-    required: true
+    required: true,
   },
   fileName: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 })
 
 const targetUrl = ref('')
@@ -44,5 +44,6 @@ const targetUrl = ref('')
 <style scoped>
 .holder {
   height: 400px;
+  max-width: 100%;
 }
 </style>

@@ -26,10 +26,17 @@ function getClass() {
   <div :class="getClass()">
     <BlogHeader />
     <hr />
-    <RouterView />
+    <div class="content">
+      <RouterView />
+    </div>
     <hr />
     <BlogFooter />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.content {
+  min-height: 100%;
+  min-height: 100vh;
+}
+</style>

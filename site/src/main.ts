@@ -6,8 +6,6 @@ import router from './router'
 import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
-document.title = 'PAUL SARDA'
-
 const pina = createPinia()
 pina.use(piniaPluginPersistedstate)
 

@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/games">Games</RouterLink>
         <RouterLink to="/modes">Modes</RouterLink>
-        <a href="https://bookclub.sarda.dev">Book Club (Hosted on a 3ds)</a>
+        <RouterLink to="/sites">Sites</RouterLink>
       </nav>
     </div>
   </header>

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { isMobile } from 'mobile-device-detect'
 import GamePreview from '@/components/games/GamePreview.vue'
 import { computed, ref, watch } from 'vue'
 import {
@@ -8,7 +9,9 @@ import {
   WalkGoodMaybe,
   WeddingPlanner,
   Voties,
-  type GameInfo
+  type GameInfo,
+  WalkGoodMaybeHD,
+  MarchGoodMaybe,
 } from '@/games'
 import { Platform, Tag } from '@/consts'
 
@@ -32,7 +35,7 @@ function getPlatformsForBrowser() {
 
 function getTagsForBrowser() {
   const tags = [Tag.Complete]
-  if (typeof screen.orientation === 'undefined') {
+  if (isMobile) {
     tags.push(Tag.MobileFriendly)
   }
   return tags
@@ -47,13 +50,13 @@ const games: {
   {
     game: WalkGoodMaybe,
     shortDescription: 'A game about walking good, maybe?',
-    previewImage: '/photos/game/previews/walk-good-maybe.webm'
+    previewImage: '/photos/game/previews/walk-good-maybe.webm',
   },
   {
     game: WeddingPlanner,
     shortDescription: 'Prepare for an onslaught of guests!',
     longDescription: `Setup dance floors, Photo booths buffets and tables. Pick up gifts and try your best to survive the onslaught of guests. Which are relentless hungry dancing and are missing the part of their brain that prevents excess.`,
-    previewImage: '/photos/game/previews/wedding-planner.webm'
+    previewImage: '/photos/game/previews/wedding-planner.webm',
   },
   {
     game: UltimateChess2024,
@@ -64,25 +67,34 @@ const games: {
       It even includes 5 distinctively bad AI's including bogo play chess vs a random number
       generator WOW.
     `,
-    previewImage: '/photos/game/previews/ultimate-chess-2024.webm'
+    previewImage: '/photos/game/previews/ultimate-chess-2024.webm',
   },
   {
     game: NoTouchyFace,
     shortDescription: "Don't let anything touch your eyes!",
     longDescription: `Dear god please don't let anything touch your eyes while avoiding the falling fingers and knives lodging themselves deep under your skin`,
-    previewImage: '/photos/game/previews/face.webm'
+    previewImage: '/photos/game/previews/face.webm',
   },
   {
     game: StopTheMail,
-    shortDescription: 'A completely unfinished tower defense game for the DS'
+    shortDescription: 'A completely unfinished tower defense game for the DS',
   },
   {
     game: Voties,
-    shortDescription: 'A bizarre city builder I guess?'
-  }
+    shortDescription: 'A bizarre city builder I guess?',
+  },
+  {
+    game: WalkGoodMaybeHD,
+    shortDescription: 'Incomplete version of Walk Good Maybe.',
+  },
+  {
+    game: MarchGoodMaybe,
+    shortDescription: 'Watch squares move towards the middle.',
+  },
 ]
 
 const filteredGames = computed(() => {
+  console.log(tagFilter.value)
   return games.filter((game) => {
     console.log(tagFilter.value.join(', '))
     if (tagFilter.value.length > 0) {
@@ -109,6 +121,18 @@ watch([platformsFilter, tagFilter], () => {
     tagFilter.value.includes(Tag.MobileFriendly)
   ) {
     tagFilter.value = tagFilter.value.filter((tag) => tag !== Tag.MobileFriendly)
+  }
+})
+
+const completeCheckBox = ref(true)
+
+watch(completeCheckBox, () => {
+  if (completeCheckBox.value) {
+    tagFilter.value.push(Tag.Complete)
+    tagFilter.value = tagFilter.value.filter((tag) => tag !== Tag.Abaddon)
+  } else {
+    tagFilter.value.push(Tag.Abaddon)
+    tagFilter.value = tagFilter.value.filter((tag) => tag !== Tag.Complete)
   }
 })
 </script>
@@ -141,7 +165,7 @@ watch([platformsFilter, tagFilter], () => {
         <div>
           <label>
             <span>Complete?</span>
-            <input type="checkbox" v-model="tagFilter" :value="Tag.Complete" />
+            <input type="checkbox" v-model="completeCheckBox" />
           </label>
         </div>
         <br />
@@ -154,13 +178,14 @@ watch([platformsFilter, tagFilter], () => {
     </div>
     <hr />
     <div v-if="filteredGames.length > 0">
-      <div class="preview" v-for="game in filteredGames" :key="game.game.title">
+      <div class="preview" v-for="(game, i) in filteredGames" :key="game.game.title">
         <GamePreview
           :game="game.game"
           :shortDescription="game.shortDescription"
           :longDescription="game.longDescription"
           :previewImage="game.previewImage"
         />
+        <hr v-if="i !== filteredGames.length - 1" />
       </div>
     </div>
     <div v-else>
@@ -195,5 +220,14 @@ th {
 
 input[type='checkbox'] {
   margin-left: 5px;
+}
+
+.preview hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #cd99dd;
 }
 </style>

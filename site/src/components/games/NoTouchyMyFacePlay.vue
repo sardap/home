@@ -18,4 +18,8 @@ import DownloadSection from './DownloadSection.vue'
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+embed {
+  max-width: 100%;
+}
+</style>

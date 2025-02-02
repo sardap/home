@@ -2,7 +2,9 @@
 
 <template>
   <footer>
-    <div></div>
+    <div>
+      <p>Wow neat a footer</p>
+    </div>
   </footer>
 </template>
 

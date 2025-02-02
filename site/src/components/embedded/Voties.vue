@@ -25,4 +25,8 @@ const fileName = 'main.html'
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+iframe {
+  max-width: 100%;
+}
+</style>
