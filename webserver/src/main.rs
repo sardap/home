@@ -24,6 +24,7 @@ async fn main() -> std::io::Result<()> {
             .route("/games/{game}", web::get().to(index))
             .route("/modes", web::get().to(index))
             .route("/modes/{mode}", web::get().to(index))
+            .route("/sites", web::get().to(index))
             .service(fs::Files::new("/", STATIC_PATH.clone()).use_last_modified(true))
     })
     .bind(("0.0.0.0", 8080))?
