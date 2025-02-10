@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RomanTime } from 'modern-roman-clock'
-import { onMounted, ref, watch } from 'vue'
+import { h, onMounted, ref, watch } from 'vue'
 import WorldMap from './WorldMap.vue'
 import { find } from 'browser-geo-tz'
 
@@ -91,6 +91,48 @@ function copyLinkToClipboard() {
   copyLinkDirty.value = true
   copyTextDirty.value = false
 }
+
+const year = ref(new Date().getFullYear())
+const month = ref(new Date().getMonth() + 1)
+const day = ref(new Date().getDate())
+const hours = ref(new Date().getHours())
+const minutes = ref(new Date().getMinutes())
+
+watch([hours, minutes], async () => {
+  if (hours.value < 0) {
+    hours.value = 0
+  }
+  if (hours.value > 23) {
+    hours.value = 23
+  }
+  if (minutes.value > 59) {
+    minutes.value = 59
+  }
+  if (minutes.value < 0) {
+    minutes.value = 0
+  }
+  time.value = hours.value + ':' + minutes.value
+  console.log(time.value)
+})
+
+watch([year, month, day], async () => {
+  if (month.value > 12) {
+    month.value = 12
+  }
+  if (month.value < 1) {
+    month.value = 1
+  }
+  if (day.value > 31) {
+    day.value = 31
+  }
+  if (day.value < 1) {
+    day.value = 1
+  }
+  date.value = `${year.value}-${month.value.toString().padStart(2, '0')}-${day.value.toString().padStart(2, '0')}`
+  console.log(date.value)
+})
+
+const datePickerKind = ref<'system' | 'custom'>('custom')
 </script>
 
 <template>
@@ -125,11 +167,35 @@ function copyLinkToClipboard() {
     <hr />
     <div>
       <h3>Parameters</h3>
-      <div>
+      <select v-model="datePickerKind">
+        <option value="system">System Date Picker</option>
+        <option value="custom">Custom Date Picker</option>
+      </select>
+      <div v-if="datePickerKind === 'system'">
         <label>Date</label>
         <input type="date" v-model="date" />
         <label>Time</label>
         <input type="time" v-model="time" />
+      </div>
+      <div v-else-if="datePickerKind === 'custom'">
+        <div>
+          <table>
+            <tr>
+              <td>Year</td>
+              <td>Month</td>
+              <td>Day</td>
+              <td>Hours</td>
+              <td>Minutes</td>
+            </tr>
+            <tr>
+              <td><input type="number" v-model="year" /></td>
+              <td><input type="number" v-model="month" /></td>
+              <td><input type="number" v-model="day" /></td>
+              <td><input type="number" v-model="hours" /></td>
+              <td><input type="number" v-model="minutes" /></td>
+            </tr>
+          </table>
+        </div>
       </div>
       <p>Country Leader Code</p>
       <select v-model="countryLeaderCode">
@@ -190,6 +256,9 @@ function copyLinkToClipboard() {
 <style scoped>
 .current-time {
   font-family: 'times new roman';
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 label,
@@ -207,5 +276,21 @@ ul {
 
 .extra {
   margin-top: 20px;
+}
+
+table input[type='number'] {
+  width: 80px;
+  text-align: center;
+  margin-right: 0px;
+}
+
+td {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
