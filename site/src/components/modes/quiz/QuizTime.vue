@@ -29,20 +29,20 @@ interface QuestionHistory {
 const questions: Question[] = [
   {
     question: 'In what year did the first Gulf War start?',
-    answer: '1990'
+    answer: '1990',
   },
   {
     question: 'Who is the longest-serving Australian Prime Minister?',
     options: ['Robert Menzies', 'John Howard', 'Bob Hawke', 'Malcolm Fraser'],
     answer: 'Robert Menzies',
-    bonusInfo: 'He was Prime Minister for 18 years.'
+    bonusInfo: 'He was Prime Minister for 18 years.',
   },
   {
     question:
       'Which Australian Prime Minister had the highest Nielsen Poll rating at any point during their tenure?',
     options: ['Kevin Rudd', 'John Howard', 'Bob Hawke', 'Gough Whitlam', 'Malcolm Fraser'],
     answer: 'Bob Hawke',
-    bonusInfo: 'Bob Hawke had a 75% approval rating in 1984.'
+    bonusInfo: 'Bob Hawke had a 75% approval rating in 1984.',
   },
   {
     question:
@@ -53,20 +53,20 @@ const questions: Question[] = [
       'Nintendo 64, Playstation 1, Sega Saturn',
       'Playstation 1, Nintendo 64, Sega Saturn',
       'Nintendo 64, Sega Saturn, Playstation 1',
-      'Sega Saturn, Nintendo 64, Playstation 1'
+      'Sega Saturn, Nintendo 64, Playstation 1',
     ],
     answer: 'Sega Saturn, Playstation 1, Nintendo 64',
     bonusInfo:
-      'The Sega Saturn was released in 1995, followed by the Playstation 1 later the same year, and the Nintendo 64 in 1997.'
+      'The Sega Saturn was released in 1995, followed by the Playstation 1 later the same year, and the Nintendo 64 in 1997.',
   },
   {
     question: 'Which company launched the Sega Dreamcast in Australia?',
     answer: 'Ozisoft',
-    bonusInfo: 'Ozisoft was renamed to Atari Australia Pty Ltd. in 2003.'
+    bonusInfo: 'Ozisoft was renamed to Atari Australia Pty Ltd. in 2003.',
   },
   {
     question: 'As of version 7.33d, how many DOTA 2 heroes are there?',
-    answer: '124'
+    answer: '124',
   },
   {
     question:
@@ -75,24 +75,24 @@ const questions: Question[] = [
       'Robert Menzies (Liberal)',
       'Frank Brennan (Labor)',
       'John Latham (Nationalist)',
-      'Herbert Evatt (Labor)'
+      'Herbert Evatt (Labor)',
     ],
     answer: 'Robert Menzies (Liberal)',
-    bonusInfo: 'He went on to become Prime Minister in 1939, a year later.'
+    bonusInfo: 'He went on to become Prime Minister in 1939, a year later.',
   },
   {
     question:
       'What did King Charles III write to Governor General John Kerr after he dismissed the democratically elected Prime Minister, Gough Whitlam?',
     options: [
       "'What you did last year was right and the courageous thing to do.'",
-      "'I have no opinion on the matter as I'm obligated to be politically neutral.'"
+      "'I have no opinion on the matter as I'm obligated to be politically neutral.'",
     ],
-    answer: "'What you did last year was right and the courageous thing to do.'"
+    answer: "'What you did last year was right and the courageous thing to do.'",
   },
   {
     question: 'Which private military company used an Xbox 360 game for advertisement?',
     options: ['Blackwater', 'G4S', 'DynCorp', 'FDG Corp'],
-    answer: 'Blackwater'
+    answer: 'Blackwater',
   },
   {
     question:
@@ -102,10 +102,10 @@ const questions: Question[] = [
       'Australian Secret Intelligence Service (ASIS)',
       'Australian Federal Police (AFP)',
       'Australian Criminal Intelligence Commission (ACIC)',
-      'Australian Border Force (ABF)'
+      'Australian Border Force (ABF)',
     ],
     answer: 'Australian Secret Intelligence Service (ASIS)',
-    bonusInfo: 'In 2004, John Howard gave ASIS permission to resume operations.'
+    bonusInfo: 'In 2004, John Howard gave ASIS permission to resume operations.',
   },
   {
     question:
@@ -113,7 +113,7 @@ const questions: Question[] = [
     options: ['Liberal Party', 'Australian Labor Party', 'Australian Greens', 'One Nation'],
     answer: 'Liberal Party',
     bonusInfo:
-      "The signs stated 'the correct way to vote' and instructed electors to put a '1' next to the Liberal candidate's name."
+      "The signs stated 'the correct way to vote' and instructed electors to put a '1' next to the Liberal candidate's name.",
   },
   {
     question:
@@ -121,69 +121,69 @@ const questions: Question[] = [
     options: ['Rio Tinto', 'BHP', 'Fortescue Metals Group', 'Glencore'],
     answer: 'Rio Tinto',
     bonusInfo:
-      "The investigation concluded that 'Rio Tinto knew the value of what they were destroying but blew it up anyway.'"
+      "The investigation concluded that 'Rio Tinto knew the value of what they were destroying but blew it up anyway.'",
   },
   {
     question: 'In which year did South Korea officially adopt the international age system?',
-    answer: '2023'
+    answer: '2023',
   },
   {
     question: 'In which year did North Korea officially adopt the international age system?',
-    answer: '1980'
+    answer: '1980',
   },
   {
     question:
       'According to Korean age, if someone was born on 30th December 1999, how old would they be on 1st January 2000?',
-    answer: '2'
+    answer: '2',
   },
   {
     question: "What was the GameCube's codename during development?",
     options: ['Dolphin', 'Star Cube', 'Play Cube', 'Project Reality'],
     answer: 'Dolphin',
     bonusInfo:
-      "The GameCube's graphics chip was named 'Flipper' in reference to the 'Dolphin' codename."
+      "The GameCube's graphics chip was named 'Flipper' in reference to the 'Dolphin' codename.",
   },
   {
     question: "What was the duration of the Sega Dreamcast's lifespan in Australia?",
     options: ['1 year', '2 years', '3 years', '4 years'],
-    answer: '2 years'
+    answer: '2 years',
   },
   {
     question: "What is the colour of Sonic's arms in Sonic Adventure?",
     options: ['Blue', 'Peach'],
     answer: 'Peach',
-    bonusInfo: 'Sonics arms in the movie are Blue'
+    bonusInfo: 'Sonics arms in the movie are Blue',
   },
   {
     question:
       'Which company sued the developers, Silicon Knights, accusing them of stealing their source code to create the engine for the hit Xbox 360 game Too Human?',
     options: ['Epic Games', 'ZeniMax Media', 'Id Software', 'Activision'],
-    answer: 'Epic Games'
+    answer: 'Epic Games',
   },
   {
     question: 'Which 50 Cent game has the highest Metacritic score?',
     options: [
       '50 Cent: Bulletproof',
       '50 Cent: Blood on the Sand',
-      '50 Cent: Bulletproof G Unit Edition'
+      '50 Cent: Bulletproof G Unit Edition',
     ],
-    answer: '50 Cent: Blood on the Sand'
+    answer: '50 Cent: Blood on the Sand',
   },
   {
     question:
       "How many pit bulls did the police seize from DMX's house when they raided it in 2008 due to a dog-fighting ring?",
-    answer: '12'
+    answer: '12',
   },
   {
     question: 'As of 01/07/2023, how many Rabbids games are there?',
     options: ['10', '15', '18', '23', '27'],
-    answer: '23'
+    answer: '23',
   },
   {
     question: 'How many consecutive covid 19 press conferences did Daniel Andrews do?',
     options: ['120', '93', '127', '82', '97', '101', '113', '118'],
-    answer: '120'
-  }
+    answer: '120',
+  },
 ]
 
 const diceRollAudio = new Audio('/audio/quiz/diceRoll.wav')
@@ -243,7 +243,7 @@ function answerQuestion() {
   const resolved = {
     question: currentQuestion.value,
     answer: answer.value,
-    correct: answer.value.toLowerCase() == currentQuestion.value.answer.toLowerCase()
+    correct: answer.value.toLowerCase() == currentQuestion.value.answer.toLowerCase(),
   }
   questionHistory.value.push(resolved)
 
@@ -269,7 +269,7 @@ function getScore() {
     }
   }
   return `${correct}/${questionHistory.value.length} (${Math.round(
-    (correct / questionHistory.value.length) * 100
+    (correct / questionHistory.value.length) * 100,
   )}%)`
 }
 </script>

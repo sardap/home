@@ -8,7 +8,7 @@ const langsBlockList = [
   'HTML',
   'ShaderLab',
   'Dockerfile',
-  'SCSS'
+  'SCSS',
 ]
 
 export async function getCommits(repo: string): Promise<number> {

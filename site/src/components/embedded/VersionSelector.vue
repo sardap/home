@@ -4,20 +4,20 @@ import { ref, type PropType, onMounted } from 'vue'
 const props = defineProps({
   versionUrl: {
     type: String,
-    required: true
+    required: true,
   },
   resourceUrl: {
     type: String,
-    required: true
+    required: true,
   },
   fileName: {
     type: String,
-    required: true
+    required: true,
   },
   modelValue: {
     type: Object as PropType<string>,
-    required: true
-  }
+    required: true,
+  },
 })
 
 const emits = defineEmits<{

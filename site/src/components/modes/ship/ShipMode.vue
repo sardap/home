@@ -31,7 +31,7 @@ const imageSources = [
   '/ship/27.png',
   '/ship/28.png',
   '/ship/29.png',
-  '/ship/30.png'
+  '/ship/30.png',
 ]
 
 const images = ref<HTMLImageElement[]>([])

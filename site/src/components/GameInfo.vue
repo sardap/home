@@ -5,12 +5,12 @@ import { type PropType } from 'vue'
 const props = defineProps({
   filter: {
     type: Object as PropType<ProjectFilter>,
-    required: true
+    required: true,
   },
   technologies: {
     type: Array as PropType<Tag[]>,
-    required: true
-  }
+    required: true,
+  },
 })
 
 function should_show(): boolean {

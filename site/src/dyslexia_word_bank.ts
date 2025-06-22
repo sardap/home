@@ -9,7 +9,7 @@ const wordMap: Record<string, string[]> = {
     'disxliexa',
     'dislexixa',
     'dyslixila',
-    'dysleixa'
+    'dysleixa',
   ],
   dyslexic: [
     'dislxisic',
@@ -21,7 +21,7 @@ const wordMap: Record<string, string[]> = {
     'dislxeic',
     'disxlesic',
     'dysxlisc',
-    'disyleixc'
+    'disyleixc',
   ],
   your: ['your'],
   team: ['team'],
@@ -237,7 +237,7 @@ const wordMap: Record<string, string[]> = {
   redundancy: ['redundency', 'redudency'],
   multiregion: ['multiregion'],
   product: ['product'],
-  names: ['names']
+  names: ['names'],
 }
 
 export function dyslexiafiy_word(word: string): string {

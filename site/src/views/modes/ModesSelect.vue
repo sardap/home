@@ -7,7 +7,7 @@ const router = useRouter()
 const modes = getModes()
 
 function getModes() {
-  const modes = [Mode.Dog, Mode.QuizTime, Mode.Dyslexia, Mode.Ship, Mode.RomanClock]
+  const modes = [Mode.Dog, Mode.QuizTime, Mode.Dyslexia, Mode.Ship, Mode.RomanClock, Mode.AusPop]
 
   // Shuffle the modes
   for (let i = modes.length - 1; i > 0; i--) {

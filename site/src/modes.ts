@@ -5,7 +5,8 @@ export enum Mode {
   Dyslexia = 'dyslexia',
   PhraseLearner = 'phrase-learner',
   Ship = 'pauls-ship',
-  RomanClock = 'roman-clock'
+  RomanClock = 'roman-clock',
+  AusPop = 'aus-pop',
 }
 
 export function stringToMode(newModeStr: string) {
@@ -32,6 +33,9 @@ export function stringToMode(newModeStr: string) {
       break
     case Mode.RomanClock:
       newMode = Mode.RomanClock
+      break
+    case Mode.AusPop:
+      newMode = Mode.AusPop
       break
     case Mode.Dyslexia:
     case 'disleixa':

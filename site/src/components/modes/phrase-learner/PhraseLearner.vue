@@ -17,17 +17,17 @@ const phrases: Phrase[] = [
     type: 'statement',
     korean: [
       {
-        text: '키가 크다'
+        text: '키가 크다',
       },
       {
-        text: '너무 키가 크다'
-      }
+        text: '너무 키가 크다',
+      },
     ],
     english: [
       {
-        text: 'Tall'
-      }
-    ]
+        text: 'Tall',
+      },
+    ],
   },
   {
     type: 'statement',
@@ -35,19 +35,19 @@ const phrases: Phrase[] = [
       { text: '잘생겼다' },
       { text: '멋지다' },
       { text: '아주 잘생긴다' },
-      { text: '참 잘생겼다' }
+      { text: '참 잘생겼다' },
     ],
-    english: [{ text: 'Handsome' }]
+    english: [{ text: 'Handsome' }],
   },
   {
     type: 'statement',
     korean: [{ text: '축하합니다' }, { text: '축하드려요' }, { text: '축하해요' }],
-    english: [{ text: 'Congratulations' }]
+    english: [{ text: 'Congratulations' }],
   },
   {
     type: 'statement',
     korean: [{ text: '여드름이 있어요' }, { text: '여드름이 많아요' }],
-    english: [{ text: 'You have pimples' }]
+    english: [{ text: 'You have pimples' }],
   },
   {
     type: 'question',
@@ -55,9 +55,9 @@ const phrases: Phrase[] = [
       { text: '너 몇 살이야?' },
       { text: '당신의 나이는 몇 살입니까?' },
       { text: '나이가 얼마나 됩니까?' },
-      { text: '너 몇살?' }
+      { text: '너 몇살?' },
     ],
-    english: [{ text: 'How old are you?' }]
+    english: [{ text: 'How old are you?' }],
   },
   {
     type: 'question',
@@ -67,9 +67,9 @@ const phrases: Phrase[] = [
       { text: '당신이 하는 일은 무엇인가요?' },
       { text: '어떤 직업을 가지고 있나요?' },
       { text: '어떤 직업을 하고 계신가요?' },
-      { text: '직업이 뭐시죠?' }
+      { text: '직업이 뭐시죠?' },
     ],
-    english: [{ text: "What's your job?" }]
+    english: [{ text: "What's your job?" }],
   },
   {
     type: 'question',
@@ -78,18 +78,18 @@ const phrases: Phrase[] = [
       { text: '연애한지 얼마나 되었나요?' },
       { text: '당신들은 언제부터 사귀기 시작했나요?' },
       { text: '사귄지 얼마나 됐어요?' },
-      { text: '얼마 동안 사겼나요?' }
+      { text: '얼마 동안 사겼나요?' },
     ],
-    english: [{ text: 'How long have you been dating?' }]
+    english: [{ text: 'How long have you been dating?' }],
   },
   {
     type: 'question',
     korean: [
       { text: '당신의 MBTI는 무엇입니까?' },
       { text: 'MBTI 유형이 어떻게 되나요?' },
-      { text: '당신의 MBTI는 무엇인가요?' }
+      { text: '당신의 MBTI는 무엇인가요?' },
     ],
-    english: [{ text: "What's your MBTI?" }]
+    english: [{ text: "What's your MBTI?" }],
   },
   {
     type: 'question',
@@ -97,9 +97,9 @@ const phrases: Phrase[] = [
       { text: '언제 호주로 돌아가십니까?' },
       { text: '언제 호주에 가시나요?' },
       { text: '언제 호주로 복귀하나요?' },
-      { text: '언제 호주에 돌아가려고 하나요?' }
+      { text: '언제 호주에 돌아가려고 하나요?' },
     ],
-    english: [{ text: 'When do you go back to Australia?' }]
+    english: [{ text: 'When do you go back to Australia?' }],
   },
   {
     type: 'question',
@@ -107,18 +107,18 @@ const phrases: Phrase[] = [
       { text: '당신은 허니문을 어디에서 보내십니까?' },
       { text: '당신은 허니문을 어디로 가나요?' },
       { text: '허니문을 어디에서 즐길 예정인가요?' },
-      { text: '허니문을 어디로 가시나요?' }
+      { text: '허니문을 어디로 가시나요?' },
     ],
-    english: [{ text: 'Where do you go for a honeymoon?' }]
+    english: [{ text: 'Where do you go for a honeymoon?' }],
   },
   {
     type: 'question',
     korean: [
       { text: '언제 아이를 가질 계획인가요?' },
       { text: '언제 아이를 갖고 싶어하십니까?' },
-      { text: '언제 아이를 기대하고 있나요?' }
+      { text: '언제 아이를 기대하고 있나요?' },
     ],
-    english: [{ text: 'When are you having kids?' }]
+    english: [{ text: 'When are you having kids?' }],
   },
   {
     type: 'question',
@@ -127,9 +127,9 @@ const phrases: Phrase[] = [
       { text: '당신은 어디서 학업을 이수했나요?' },
       { text: '어디에서 교육을 받았나요?' },
       { text: '어디서 배웠어요?' },
-      { text: '어디서 학교 다녔어요?' }
+      { text: '어디서 학교 다녔어요?' },
     ],
-    english: [{ text: 'Where did you study?' }]
+    english: [{ text: 'Where did you study?' }],
   },
   {
     type: 'question',
@@ -137,10 +137,10 @@ const phrases: Phrase[] = [
       { text: '왜 아내를 좋아하십니까?' },
       { text: '왜 당신의 아내를 좋아하나요?' },
       { text: '당신의 아내에게서 무엇을 좋아하나요?' },
-      { text: '왜 당신은 아내를 사랑하나요?' }
+      { text: '왜 당신은 아내를 사랑하나요?' },
     ],
-    english: [{ text: 'Why do you like your wife?' }]
-  }
+    english: [{ text: 'Why do you like your wife?' }],
+  },
 ]
 
 interface Question {
@@ -163,7 +163,7 @@ const currentQuestion = ref<Question>({
   question: '',
   options: [],
   correctAnswer: '',
-  korean: true
+  korean: true,
 })
 const answer = ref<string | null>(null)
 const speed = ref(1.0)
@@ -196,13 +196,13 @@ function getNextPhrase() {
     currentQuestion.value.question =
       currentPhrase.korean[Math.floor(Math.random() * currentPhrase.korean.length)].text
     currentQuestion.value.options = [
-      currentPhrase.english[Math.floor(Math.random() * currentPhrase.english.length)].text
+      currentPhrase.english[Math.floor(Math.random() * currentPhrase.english.length)].text,
     ]
   } else {
     currentQuestion.value.question =
       currentPhrase.english[Math.floor(Math.random() * currentPhrase.english.length)].text
     currentQuestion.value.options = [
-      currentPhrase.korean[Math.floor(Math.random() * currentPhrase.korean.length)].text
+      currentPhrase.korean[Math.floor(Math.random() * currentPhrase.korean.length)].text,
     ]
   }
 
@@ -247,7 +247,7 @@ function submit() {
     question: currentQuestion.value.question,
     answer: answer.value,
     correctAnswer: currentQuestion.value.correctAnswer,
-    correct: answer.value === currentQuestion.value.correctAnswer
+    correct: answer.value === currentQuestion.value.correctAnswer,
   })
   getNextPhrase()
   answer.value = null

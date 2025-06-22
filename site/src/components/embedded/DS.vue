@@ -5,16 +5,16 @@ import VersionSelector from './VersionSelector.vue'
 defineProps({
   versionUrl: {
     type: String,
-    required: true
+    required: true,
   },
   resourceUrl: {
     type: String,
-    required: true
+    required: true,
   },
   fileName: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 })
 
 const targetUrl = ref('')

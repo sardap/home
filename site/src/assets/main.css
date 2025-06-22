@@ -1,7 +1,7 @@
 @import './base.css';
 
 :root {
-  --color-background: #E9D2F0;
+  --color-background: #e9d2f0;
   --color-text: black;
   text-align: center;
 }
@@ -109,7 +109,7 @@ img {
 
 .play-button {
   font-size: 2em;
-  background-color: #FFBDBD;  
+  background-color: #ffbdbd;
   border-radius: 35%;
   padding: 20px;
   margin: 10px;

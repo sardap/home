@@ -5,6 +5,7 @@ import Dyslexia from '@/components/modes/dyslexia/Dyslexia.vue'
 import PhraseLearner from '@/components/modes/phrase-learner/PhraseLearner.vue'
 import Ship from '@/components/modes/ship/ShipMode.vue'
 import RomanClock from '@/components/modes/roman-clock/RomanClock.vue'
+import AusPop from '@/components/modes/aus-pop/AusPop.vue'
 import { useRoute } from 'vue-router'
 import { onMounted, ref } from 'vue'
 import { stringToMode, Mode } from '@/modes'
@@ -32,6 +33,7 @@ onMounted(() => {
     <PhraseLearner v-else-if="mode == Mode.PhraseLearner" />
     <Ship v-else-if="mode == Mode.Ship" />
     <RomanClock v-else-if="mode == Mode.RomanClock" />
+    <AusPop v-else-if="mode == Mode.AusPop" />
   </div>
 </template>
 
