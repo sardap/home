@@ -34,10 +34,7 @@ const O_1_SORT = `fn bubble_sort<T: Ord>(array: &mut [T]) {
 
 <template>
   <div>
-    <h2>PAUL SARDA THOUGHTS</h2>
     <div>
-      <h3>O(1) Sort</h3>
-      <p>Occurred at: 2025/03/01 @ 20 AEDT</p>
       <p>We can sort in O(1) if you just sleep so it always takes the same time.</p>
       <VCodeBlock :code="O_1_SORT" highlightjs lang="rust" theme="neon-bunny-carrot" />
     </div>

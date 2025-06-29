@@ -38,7 +38,7 @@ export const posts: Post[] = [
     body: Post20250629KoreaPhotos2025,
   },
   {
-    name: 'O1 sorting',
+    name: 'O(1) sorting',
     date: new Date('2025/03/01'),
     body: Post20250305O1,
   },

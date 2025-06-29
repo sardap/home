@@ -1,38 +1,22 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import { markRaw, onMounted, ref, type Component, type Raw } from 'vue'
+import { onMounted, ref } from 'vue'
 import { type Post, getPost, postLink } from '@/posts'
+import PostCom from '@/components/posts/PostCom.vue'
 
 const route = useRoute()
-const postName = ref(route.params.post as string) // Get the mode from the URL
+const postName = ref(route.params.post as string)
 
-interface ResolvedPost extends Post {
-  body: Raw<Component>
-}
-
-const resolvedPosts = ref<ResolvedPost | null>()
+const resolvedPost = ref<Post | null>()
 
 onMounted(async () => {
-  // Resolve all post bodies
-  const post = getPost(postName.value)
-
-  if (post === null) {
-    return
-  }
-
-  resolvedPosts.value = {
-    ...post,
-    body: markRaw(await post.body),
-  }
+  resolvedPost.value = getPost(postName.value)
 })
 </script>
 
 <template>
-  <div v-if="resolvedPosts">
-    <h1>
-      <a :href="`/posts/${postLink(resolvedPosts)}`" target="_blank">{{ resolvedPosts.name }}</a>
-    </h1>
-    <component :is="resolvedPosts.body" />
+  <div v-if="resolvedPost">
+    <PostCom :post="resolvedPost" />
   </div>
 </template>
 
