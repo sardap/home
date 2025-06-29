@@ -30,6 +30,10 @@ const router = createRouter({
       path: '/sites',
       component: () => import('../views/sites/SitesSelect.vue'),
     },
+    {
+      path: '/posts/:post',
+      component: () => import('../views/PostView.vue'),
+    },
   ],
 })
 

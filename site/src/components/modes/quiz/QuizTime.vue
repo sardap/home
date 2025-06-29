@@ -293,22 +293,24 @@ function getScore() {
         <p>{{ currentQuestion.question }}</p>
         <div v-if="currentQuestion.options" class="table-container">
           <table>
-            <tr v-for="(option, i) in currentQuestion.options" :key="i">
-              <td>
-                <input
-                  :id="`quiz_time_radio_${i}`"
-                  :name="`quiz_time_radio_${i}`"
-                  type="radio"
-                  :value="option"
-                  v-model="answer"
-                />
-              </td>
-              <td>
-                <label :id="`quiz_time_radio_${i}`" :for="`quiz_time_radio_${i}`">{{
-                  option
-                }}</label>
-              </td>
-            </tr>
+            <tbody>
+              <tr v-for="(option, i) in currentQuestion.options" :key="i">
+                <td>
+                  <input
+                    :id="`quiz_time_radio_${i}`"
+                    :name="`quiz_time_radio_${i}`"
+                    type="radio"
+                    :value="option"
+                    v-model="answer"
+                  />
+                </td>
+                <td>
+                  <label :id="`quiz_time_radio_${i}`" :for="`quiz_time_radio_${i}`">{{
+                    option
+                  }}</label>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <div v-else>
@@ -326,25 +328,29 @@ function getScore() {
       <h3>Question History</h3>
       <p>{{ getScore() }}</p>
       <table class="answer-table">
-        <tr>
-          <th>Number</th>
-          <th>Question</th>
-          <th>Answer</th>
-          <th>Correct</th>
-          <th>Bonus Fact</th>
-        </tr>
-        <tr
-          v-for="(question, i) in questionHistory"
-          class="border_bottom"
-          :class="question.correct ? `correct` : `incorrect`"
-          :key="i"
-        >
-          <td style="text-align: center">#{{ i + 1 }}</td>
-          <td>{{ question.question.question }}</td>
-          <td>{{ question.answer }}</td>
-          <td style="text-align: center">{{ question.correct }}</td>
-          <td>{{ question.question.bonusInfo ? question.question.bonusInfo : `N/A` }}</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Question</th>
+            <th>Answer</th>
+            <th>Correct</th>
+            <th>Bonus Fact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            v-for="(question, i) in questionHistory"
+            class="border_bottom"
+            :class="question.correct ? `correct` : `incorrect`"
+            :key="i"
+          >
+            <td style="text-align: center">#{{ i + 1 }}</td>
+            <td>{{ question.question.question }}</td>
+            <td>{{ question.answer }}</td>
+            <td style="text-align: center">{{ question.correct }}</td>
+            <td>{{ question.question.bonusInfo ? question.question.bonusInfo : `N/A` }}</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>

@@ -180,20 +180,24 @@ const datePickerKind = ref<'system' | 'custom'>('custom')
       <div v-else-if="datePickerKind === 'custom'">
         <div>
           <table>
-            <tr>
-              <td>Year</td>
-              <td>Month</td>
-              <td>Day</td>
-              <td>Hours</td>
-              <td>Minutes</td>
-            </tr>
-            <tr>
-              <td><input type="number" v-model="year" /></td>
-              <td><input type="number" v-model="month" /></td>
-              <td><input type="number" v-model="day" /></td>
-              <td><input type="number" v-model="hours" /></td>
-              <td><input type="number" v-model="minutes" /></td>
-            </tr>
+            <thead>
+              <tr>
+                <td>Year</td>
+                <td>Month</td>
+                <td>Day</td>
+                <td>Hours</td>
+                <td>Minutes</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="number" v-model="year" /></td>
+                <td><input type="number" v-model="month" /></td>
+                <td><input type="number" v-model="day" /></td>
+                <td><input type="number" v-model="hours" /></td>
+                <td><input type="number" v-model="minutes" /></td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
