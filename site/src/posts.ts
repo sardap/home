@@ -1,5 +1,6 @@
 import type { Component } from 'vue'
 
+import Post20260712KoreaPhotos2026 from '@/components/posts/Post20260712KoreaPhotos2026.vue'
 import Post20250629KoreaPhotos2025 from '@/components/posts/Post20250629KoreaPhotos2025.vue'
 import Post20250305O1 from '@/components/posts/Post20250305O1.vue'
 
@@ -32,6 +33,11 @@ export function postLink(post: Post): string {
 }
 
 export const posts: Post[] = [
+  {
+    name: 'Korea Photos 2026',
+    date: new Date('2026/06/17'),
+    body: Post20260712KoreaPhotos2026,
+  },
   {
     name: 'Korea Photos 2025',
     date: new Date('2025/06/29'),
