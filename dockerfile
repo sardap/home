@@ -1,14 +1,14 @@
 FROM node:23.7.0-alpine3.20 AS front-builder
 
+RUN npm install -g pnpm@latest
+
 WORKDIR /app
-
-COPY ./site/package*.json ./
-
-RUN npm install .
 
 COPY ./site/ .
 
-RUN npm run build
+RUN pnpm install .
+
+RUN pnpm run build
 
 ###################################
 
