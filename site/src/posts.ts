@@ -3,6 +3,7 @@ import type { Component } from 'vue'
 import Post20260712KoreaPhotos2026 from '@/components/posts/Post20260712KoreaPhotos2026.vue'
 import Post20250629KoreaPhotos2025 from '@/components/posts/Post20250629KoreaPhotos2025.vue'
 import Post20250305O1 from '@/components/posts/Post20250305O1.vue'
+import Post20251130BLR from '@/components/posts/Post20251130Blr.vue'
 
 export interface Post {
   name: string
@@ -37,6 +38,11 @@ export const posts: Post[] = [
     name: 'Korea Photos 2026',
     date: new Date('2026/06/17'),
     body: Post20260712KoreaPhotos2026,
+  },
+  {
+    name: 'Bengaluru Photos 2025',
+    date: new Date('2025/11/30'),
+    body: Post20251130BLR,
   },
   {
     name: 'Korea Photos 2025',

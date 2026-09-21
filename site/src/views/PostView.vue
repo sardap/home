@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
 import { onMounted, ref } from 'vue'
-import { type Post, getPost, postLink } from '@/posts'
+import { type Post, getPost } from '@/posts'
 import PostCom from '@/components/posts/PostCom.vue'
 
 const route = useRoute()

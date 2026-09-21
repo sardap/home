@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Posts from '@/components/posts/Posts.vue'
-import PompousPhotos from '@/components/posts/Post20250629KoreaPhotos2025.vue'
 </script>
 
 <template>
