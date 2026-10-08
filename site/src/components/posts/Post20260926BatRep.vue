@@ -7,7 +7,7 @@ import PhotoPicker from '@/components/PhotoPicker.vue'
   <div>
     <div>
       <h2>PURGE THE SHRINE</h2>
-      <p>On the desert world of Dichomanus, a once vibrant world... Once no longer. A former shrine complex has been perverted, with the former heart of the complex being transformed during the uprising into an altar for those. The local Departmento propagare has deemed this kind of perversion of a shrine unacceptable.</p>
+      <p>On the desert world of Dichomanus, A former shrine complex has been perverted, with the former heart of the complex being transformed during the uprising into an altar for those. The local Departmento propagare has deemed this kind of perversion of a shrine unacceptable.</p>
       <br/>
       <p>Witch Hunter Inquisitor Lord Helen was contacted and accepted the pleas of the Departmento propagare. With the local Sisterhood Ultio Margaritarum whose leadership had been desperately attempting to stage a cleansing of the former shrine but lacked resources Lord Helen could easily supply.</p>
       <p>The mission objective was clear: the forces of Lord Helen must have sole possession of the dark altar at B-6. Failure to take possession of the altar by this time according to intelligence reports from the Departmento propagare a ritual would complete creating such a Spectacle it would require a large amount of "Work" to clean up.</p>

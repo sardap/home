@@ -32,7 +32,7 @@ export function postLink(post: Post): string {
       '_' +
       post.date.getUTCDay() +
       '_' +
-      post.name.replace(/ /g, '_').toLowerCase(),
+      post.name.replace(/ /g, '_').replace(':', '_').toLowerCase(),
   )
 }
 
